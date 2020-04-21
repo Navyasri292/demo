@@ -17,8 +17,8 @@ import com.cg.pms.entity.Userdetails;
 //	@Query("From Userdetails where e.userName=:user and e.password=:pass")
 //	public List<Userdetails> findUser(@Param("user") String user,@Param("pass") String pass);
 //	
-	@Query(" FROM Userdetails where designation.designationId=:id")
-	public List<Userdetails>  findByDesignationId(@Param("designationid") int id);
+	@Query(" FROM Userdetails where d.designation=:des")
+	public List<Userdetails>  findByDesignation(@Param("designation") String des);
 	
 		
 }

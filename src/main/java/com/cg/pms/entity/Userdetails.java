@@ -17,21 +17,21 @@ import javax.persistence.Table;
 		@Column(name="id")
 		private int Id;
 		
-		@Column(name="userName",length=10)
+		@Column(name="userName",length=20)
 		private String  userName;
 		
-		@Column(name="password",length=10)
+		@Column(name="password",length=20)
 		private String password;
 		
 		
 		@Column(name="phonenum",length=20)
 		private String phoneNum;
 		
-		@Column(name="designation",length=10)
-		private String Designation;
+//		@Column(name="designation",length=10)
+//		private String Designation;
 		
 		@OneToMany
-		@JoinColumn(name="designationid")
+		@JoinColumn(name="designation")
 		private Designation designation;
 
 		
@@ -39,8 +39,8 @@ import javax.persistence.Table;
 			return Id;
 		}
 
-		public void setId(int id) {
-			Id = id;
+		public void setId(int Id) {
+			this.Id = Id;
 		}
 
 		public String getUserName() {

@@ -30,6 +30,13 @@ public class UserdetailsServiceImpl implements UserdetailsService {
 		}
 
 
+		@Override
+		public List<Userdetails> findByDesignation(String designation) {
+			
+			return userdetailsdao.findByDesignation(designation);
+		}
+
+
 //		@Override
 //		public List<Userdetails> findUser(String Username, String Password) {
 //

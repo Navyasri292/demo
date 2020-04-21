@@ -9,4 +9,5 @@ public interface UserdetailsService {
 	public Userdetails addUserdetails(Userdetails userdetails);
 	 public List<Userdetails> findAllUserdetails();
 	// public List<Userdetails> findUser(String Username,String Password);
+	 public List<Userdetails>  findByDesignation(String designation);
 }
